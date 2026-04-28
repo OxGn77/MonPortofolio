@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio | Développeur</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Section Héros -->
+    <section id="accueil" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Bienvenue sur mon portfolio</h1>
+                <p>Développeur passionné par la création d'expériences web modernes</p>
+                <button class="btn-primary" onclick="scrollToProjects()">Voir mes projets</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section À propos -->
+    <section id="apropos" class="about">
+        <div class="container">
+            <h2>À propos de moi</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Je suis un développeur web créatif avec une passion pour la conception et la programmation. 
+                    J'aime créer des solutions élégantes et efficaces pour des problèmes complexes.</p>
+                    <p>Mes compétences incluent HTML, CSS, JavaScript et d'autres technologies modernes du web.</p>
+                </div>
+                <div class="skills">
+                    <h3>Compétences</h3>
+                    <div class="skill-tags">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Responsive Design</span>
+                        <span class="tag">Web Design</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Projets -->
+    <section id="projets" class="projects">
+        <div class="container">
+            <h2>Mes projets</h2>
+            <div class="projects-grid">
+                <div class="project-card" data-category="web">
+                    <div class="project-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                    <div class="project-info">
+                        <h3>Projet 1</h3>
+                        <p>Site web responsive avec design moderne</p>
+                        <a href="#" class="project-link">Voir plus →</a>
+                    </div>
+                </div>
+                <div class="project-card" data-category="web">
+                    <div class="project-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                    <div class="project-info">
+                        <h3>Projet 2</h3>
+                        <p>Application web interactive avec JavaScript</p>
+                        <a href="#" class="project-link">Voir plus →</a>
+                    </div>
+                </div>
+                <div class="project-card" data-category="design">
+                    <div class="project-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                    <div class="project-info">
+                        <h3>Projet 3</h3>
+                        <p>Design UI/UX innovant et créatif</p>
+                        <a href="#" class="project-link">Voir plus →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contactez-moi</h2>
+            <div class="contact-content">
+                <form class="contact-form" id="contactForm">
+                    <input type="text" placeholder="Votre nom" required>
+                    <input type="email" placeholder="Votre email" required>
+                    <textarea placeholder="Votre message" rows="5" required></textarea>
+                    <button type="submit" class="btn-primary">Envoyer</button>
+                </form>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <h4>Email</h4>
+                        <p>contact@portfolio.com</p>
+                    </div>
+                    <div class="info-item">
+                        <h4>Téléphone</h4>
+                        <p>+33 1 23 45 67 89</p>
+                    </div>
+                    <div class="info-item">
+                        <h4>Localisation</h4>
+                        <p>France</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Mon Portfolio. Tous droits réservés.</p>
+            <div class="social-links">
+                <a href="#" onclick="handleSocialClick(event)">LinkedIn</a>
+                <a href="#" onclick="handleSocialClick(event)">GitHub</a>
+                <a href="#" onclick="handleSocialClick(event)">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
